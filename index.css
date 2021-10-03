@@ -1,0 +1,79 @@
+input, button, select {
+  box-shadow: none !important;
+}
+
+input:focus, button:fouc, select:focus {
+  box-shadow: none !important;
+}
+
+#calendar {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 70px;
+  align-items: center;
+  justify-content: center;
+}
+
+#calendar-img {
+  display: block;
+  width: 100%;
+  max-width: 798px;
+  height: 400px;
+  background: url('./image.jpeg') center no-repeat;
+  background-size: 100% 100%;
+  border-radius: 12px 12px 0 0;
+}
+
+table {
+  font-family: Georgia;
+  table-layout: fixed;
+  margin: 0 !important;
+  max-width: 800px;
+}
+
+table .title {
+  font-family: "New Times Roman";
+}
+
+table tbody {
+  background: lightgoldenrodyellow;
+}
+
+table tbody td:hover {
+  -webkit-transition: border 0.2s linear, background-color 0.3s linear;
+  transition: border 0.2s linear, background-color 0.3s linear;
+  border: 1px solid #343a40;
+  background-color: #343a40;
+  color: #f8f9fa;
+  cursor: pointer;
+}
+
+table thead tr th:first-child .float-left{
+  vertical-align: middle;
+}
+
+table select {
+  padding: 3px;
+  border-radius: 5px;
+  margin: -7px 0 0 -7px;
+  width: 45px;
+}
+
+table select option {
+  border-radius: 3px;
+  padding: 3px;
+}
+
+@media (max-width: 768px) {
+  #calendar {
+    padding: 0;
+  }
+
+  #calendar-img {
+    height: 280px;
+  }
+
+  table .title h3{
+    font-size: 22px;
+  }
+}
